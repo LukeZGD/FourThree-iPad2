@@ -5,7 +5,9 @@ FourThree is based on [4tify-iPad2](https://github.com/Zurac-Apps/4tify-iPad2), 
 
 FourThree supports dualbooting to any iOS 4.3.x version on any iPad 2, as long as that iPad 2 supported 4.3.x. iPad2,4 devices are not supported.
 
-FourThree is a utility built in [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit) - This is a 3 step process for the device. Follow through the steps to successfully set up a dualboot.
+FourThree is a utility within [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit) - This is a 3 step process for the device. Follow through the steps to successfully set up a dualboot.
+
+To get started, download Legacy iOS Kit, set it up, and select "FourThree Utility" in the main menu.
 
 ## Step 1: Restore
 
