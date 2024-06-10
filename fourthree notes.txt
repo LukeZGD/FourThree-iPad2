@@ -1,0 +1,80 @@
+fourthree notes
+6.1.3 dtre - patch out lwvm (restoredevicetree)
+4.3.x dtre - dtrb
+echo "0000010: 6272" | xxd -r - DeviceTree
+echo "0000020: 6272" | xxd -r - DeviceTree
+4.3.x ibot - ibob and other patches
+4.3.x logo - logb
+echo "0000010: 6267" | xxd -r - applelogo
+echo "0000020: 6267" | xxd -r - applelogo
+4.3.x recm - recb
+echo "0000010: 6263" | xxd -r - recoverymode
+echo "0000020: 6263" | xxd -r - recoverymode
+
+6.1.3 patch
+applelogob 4.3.5 -decrypt patch xxd
+devicetreeb 4.3.5 -decrypt patch xxd
+ibootb 4.3.5 -decrypt patch
+recoverymodeb 4.3.5 -decrypt patch xxd
+restoredevicetree 6.1.3 -decrypt patch
+
+4.3.x patch
+kernelcache 4.3.x patch
+llb 4.3.x patch
+
+-----------
+
+3221225472 = 3*1024*1024*1024, size of 6.1.3 data partition. 3 can be changed to something else
+TwistedMind2 -d1 3221225472 -s2 879124480 -d2 max
+get /TwistedMind2*
+enter sshrd
+dd if=/TwistedMind2* of=/dev/rdisk0 bs=8192
+reboot
+
+-----------
+
+mkdir /mnt1 /mnt2
+/sbin/newfs_hfs -s -v System -J -b 8192 -n a=8192,c=8192,e=8192 /dev/disk0s3
+/sbin/newfs_hfs -s -v Data -J -b 8192 -n a=8192,c=8192,e=8192 /dev/disk0s4
+mount_hfs /dev/disk0s4 /mnt2
+create udzo: extract rootfs dmg, dmg extract, dmg build
+send udzo (4.3.x fs) to device -> /var/RootFS.dmg
+echo 'y' | asr restore --source /var/RootFS.dmg --target /dev/disk0s3 --erase
+rm /var/RootFS.dmg
+fsck_hfs -f /dev/disk0s3
+umount /mnt2
+mount_hfs /dev/disk0s3 /mnt1
+mount_hfs /dev/disk0s4 /mnt2
+mv /mnt1/private/var/* /mnt2
+edit /mnt1/private/etc/fstab to have disk0s3 and disk0s4
+mkdir /mnt2/keybags
+ttbthingy
+fixkeybag -v2
+cp /tmp/systembag.kb /mnt2/keybags
+umount /mnt2
+mount_hfs /dev/disk0s4 /mnt1/private/var
+send and extract jailbreak tars to /mnt1
+umount /mnt1/private/var
+patch 4.3.x llb, put to root
+patch 4.3.x kernelcache -> /System/Library/Caches/com.apple.kernelcaches/kernelcachb
+send fourthree app
+chmod 6755 /Applications/FourThree.app/FourThree
+chmod 6755 /usr/bin/runasroot
+chmod 6755 /Applications/FourThree.app/boot.sh
+done
+
+-----------
+
+saving for later:
+logo -> logb
+6f676f6c
+62676f6c
+recm -> recb
+6d636572
+62636572
+dtre -> dtrb
+65727464
+62727464
+kernelcache -> kernelcachb
+732f6b65726e656c6361636865
+732f6b65726e656c6361636862
