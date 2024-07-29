@@ -11,7 +11,8 @@ To get started, download Legacy iOS Kit, set it up, and select "FourThree Utilit
 
 ## Step 1: Restore
 
-- If you have used Legacy iOS Kit to downgrade before, you should be familiar with this process. Just jailbreak your device, install OpenSSH in Cydia, and select the "Step 1: Restore" option in FourThree Utility. Select iOS 6.1.3 IPSW for the Target IPSW, and the iOS 4.3.x IPSW for the Base IPSW. By the end of this step, your device should be restored and jailbroken in iOS 6.1.3.
+- If you have used Legacy iOS Kit to downgrade before, you should be familiar with this process. Just jailbreak your device, install OpenSSH in Cydia, and select the "Step 1: Restore" option in FourThree Utility. Select iOS 6.1.3 IPSW for the Target IPSW, and the iOS 4.3.x IPSW for the Base IPSW. After the 6.1.3 restore, go through the setup process. By the end of this step, your device should be restored and jailbroken in iOS 6.1.3.
+- Note: After the restore, Do not open Cydia until after all steps have been completed.
 
 ## Step 2: Partition
 
