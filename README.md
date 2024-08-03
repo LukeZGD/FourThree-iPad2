@@ -24,4 +24,4 @@ To get started, download Legacy iOS Kit, set it up, and select "FourThree Utilit
 
 ## Activation
 
-- Use Legacy iOS Kit: Other Utilities -> Attempt Activation
+- No need to worry about activation issues on iOS 4.3.x, the install will be activated.
