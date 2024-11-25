@@ -9,9 +9,9 @@ To get started, download Legacy iOS Kit, set it up, and select "FourThree Utilit
 
 ## Compatibility
 
-- Supports dualbooting to any iOS 4.3.x version on any iPad 2, as long as that iPad 2 supported 4.3.x.
-- However, I have only tested this on iPad2,1 (Wi-Fi only).
-- Unfortunately, FourThree seems to have various issues with cellular iPad 2 devices according to other users.
+- Supports dualbooting to any iOS 4.3.x version on (almost) any iPad 2 that has support for 4.3.x.
+- Confirmed working on iPad2,1 and iPad2,2. For anyone who has an iPad2,3 and got this working, please let me know.
+- If you get the recovery mode screen after attempting to open the app or boot, that means your device is not compatible or too new for 4.3.x. Keep this in mind when trying out FourThree, as it will not work for everyone.
 - iPad2,4 devices are not supported.
 
 ## Step 1: Restore
