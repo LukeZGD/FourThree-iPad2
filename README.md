@@ -29,6 +29,10 @@ In this step, the device partitions will be modified to make room for the second
 
 In this step, everything will be set up and iOS 4.3.x will be installed on the device. Select the "Step 3: OS Install" option in FourThree Utility and it will go through the process of finalizing the setup. By the end of this step, the dualboot setup should be complete and the "FourThree" app is visible on the home screen.
 
+This app is what you will open in order to boot from iOS 6 to iOS 4.3.x.
+
 ## Activation
 
-No need to worry about activation issues on iOS 4.3.x, the install will be activated.
+For WiFi only iPads, you will see the activation screen on first boot. You may activate iOS 4.3.x by selecting "Attempt Activation" in Legacy iOS Kit.
+
+For cellular iPads, no need to worry about activation issues on iOS 4.3.x, the install will be hacktivated.
