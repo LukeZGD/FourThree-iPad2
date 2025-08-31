@@ -7,6 +7,8 @@ FourThree is a utility within [Legacy iOS Kit](https://github.com/LukeZGD/Legacy
 
 To get started, download Legacy iOS Kit, set it up, and select "FourThree Utility" in the main menu.
 
+Note: FourThree Utility is not supported. Any issues will not be entertained nor fixed.
+
 ## Compatibility
 
 - Supports dualbooting to any iOS 4.3.x version on (almost) any iPad 2 that has support for 4.3.x.
